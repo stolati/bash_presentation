@@ -25,24 +25,24 @@ case "$action_parameter" in
     grep "mick""_is_the_best" "$0" || true
     ;;
   5)
-    echo "-x is handy"
-    current_path="$(cd "$(dirname "$0")" ; pwd)"
-    ;;
-  6)
     echo "Using existing variable"
     echo "Your shell is $SHELL"
     echo "Using non-existent variable"
     echo "$MY_SUPER_VARIABLE"
     ;;
-  7)
+  6)
     set +u
     echo "Using non-existent variable"
     echo "launching command with param :" $MY_SUPER_VARIABLE
     ;;
-  8)
+  7)
     echo "Using non-existent variable"
     echo "${MY_SUPER_VARIABLE:-default value}"
     echo "${MY_SUPER_VARIABLE:-$(pwd)}"
+    ;;
+  8)
+    echo "-x is handy"
+    current_path="$(cd "$(dirname "$0")" ; pwd)"
     ;;
   9)
     # Putting logs into a specific file
