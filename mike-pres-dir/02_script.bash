@@ -57,12 +57,10 @@ case "$action_parameter" in
     ;;
   *)
     set +x # Avoid too much echo
-    echo "Execute $0 1"
-    echo "Execute $0 2"
-    echo "Execute $0 3"
-    echo "Execute $0 4"
-    echo "Execute $0 5"
-    echo "Execute $0 6"
+    echo "Execute :" 
+    for i in $(seq 1 9) ; do
+       echo " $0 $i"
+    done
     exit 1
   ;;
 esac
@@ -74,7 +72,7 @@ set +x
 	echo "###############"
 	echo "Script ended OK"
 	echo "###############"
-} | tac | tac # group so the exit is whole
+} # group so the exit is whole
 
 
 

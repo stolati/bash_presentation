@@ -11,11 +11,11 @@ fi
 
 # Inside the tmux command
 echo "commands:"
-echo "Ctrl-B % => split vertically"
-echo "Ctrl-B o => switch pane"
-echo "Ctrl-B c => create new window"
-echo "Ctrl-B {0...9} => switch window"
-echo "Ctrl-B d => exit session without killing it"
+echo "Ctrl-b % => split vertically"
+echo "Ctrl-b o => switch pane"
+echo "Ctrl-b c => create new window"
+echo "Ctrl-b {0...9} => switch window"
+echo "Ctrl-b d => exit session without killing it"
 echo "tmux ls, tmux attach => go back again"
 
 # We are replacing the current command with bash

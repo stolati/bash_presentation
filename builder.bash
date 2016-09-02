@@ -1,8 +1,8 @@
 #!/usr/bin/env bash
 set -eux
 
-to_compress="mike-presentation"
-dest="mick-pres.bash"
+to_compress="mike-pres-dir"
+dest="mike-pres.bash"
 
 cd "$(dirname "$0")"
 
